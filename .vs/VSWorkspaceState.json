@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Resource_Monitor",
+    "\\Resource_Monitor\\src",
+    "\\Resource_Monitor\\test",
+    "\\Resource_Monitor\\test\\src"
+  ],
+  "SelectedNode": "\\Resource_Monitor\\src\\cpuinfo_manif.h",
+  "PreviewInSolutionExplorer": false
+}
