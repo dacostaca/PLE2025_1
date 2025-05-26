@@ -2,6 +2,16 @@
 
 Este proyecto implementa un monitor de recursos en línea de comandos (`resource_mon`) para sistemas Linux, diseñado y probado para una placa de desarrollo Raspberry Pi 3. Muestra información en tiempo real sobre el uso de CPU (general y por núcleo/hilo) y memoria (física y de intercambio).
 
+## Integrantes
+*Edwin Efren Moran Goyes
+`C.C.:` 1123333760
+*Daniel Felipe Acosta Castro
+`C.C.:` 1075309092
+*Ivonne Tatiana Zapata Matínez
+`C.C.:` 1002543377
+*Diego Alejandro Arboleda Cuero
+`C.C.:` 1087834596
+
 ## Descripción Funcional
 
 `resource_mon` es una aplicación de terminal que:
