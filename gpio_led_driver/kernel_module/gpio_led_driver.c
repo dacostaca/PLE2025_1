@@ -2,7 +2,7 @@
 //con implementación de driver de dispositivo de caracteres
 
 //Hecho por Daniel Felipe Acosta Castro
-//ultima actualización: 12/06/2025
+//ultima actualización: 15/06/2025
 
 #include <linux/module.h>
 #include <linux/gpio.h>
@@ -23,7 +23,7 @@ static int majorNumber;
 static struct class* ledClass = NULL;
 static struct device* ledDevice = NULL;
 
-static int gpioPin = 64;
+static int gpioPin = 112;
 module_param(gpioPin, int, S_IRUGO);
 MODULE_PARM_DESC(gpioPin, "GPIO numero de pin para LED");
 
