@@ -1,1 +1,0 @@
-savedcmd_/home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/gpio_led_driver.o := ld -melf64lriscv -z noexecstack --no-warn-rwx-segments   -r -o /home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/gpio_led_driver.o @/home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/gpio_led_driver.mod 
