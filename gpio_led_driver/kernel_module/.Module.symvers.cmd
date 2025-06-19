@@ -1,0 +1,1 @@
+savedcmd_/home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/Module.symvers -T /home/ubuntu/PLE2025_1/gpio_led_driver/gpio_led_driver/kernel_module/modules.order -i Module.symvers -e 

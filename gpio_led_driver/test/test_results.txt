@@ -1,0 +1,18 @@
+\==== INICIO DE PRUEBAS ====
+\[1] Insertando módulo...
+\[2] Prueba: Encender LED
+LED encendido.
+\[3] Prueba: Consultar estado (esperado: ON)
+Estado del LED: ON
+\[4] Prueba: Apagar LED
+LED apagado.
+\[5] Prueba: Consultar estado (esperado: OFF)
+Estado del LED: OFF
+\[6] Prueba: Comando inválido
+Uso: ./gpio\_led\_user <comando>
+on     – Enciende el LED
+off    – Apaga el LED
+state  – Consulta el estado del LED
+\[7] Logs del kernel (dmesg)
+\[8] Removiendo módulo...
+\==== FIN DE PRUEBAS ====

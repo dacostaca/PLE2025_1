@@ -1,0 +1,26 @@
+TEST MANUAL – LED GPIO DRIVER
+
+Plataforma: Lichee RV Dock con Linux 6.8
+Autor: Daniel Felipe Acosta Castro
+Fecha: 16/06/2025
+
+----------------------------------------------------
+1. Prueba de encendido de LED:
+   - Comando: ./gpio_led_user on
+   - Resultado: LED encendido correctamente
+
+2. Prueba de apagado:
+   - Comando: ./gpio_led_user off
+   - Resultado: LED apagado correctamente
+
+3. Lectura del estado:
+   - Comando: ./gpio_led_user state
+   - Resultado: "ON" si estaba encendido, "OFF" si apagado
+
+4. Comando inválido:
+   - Comando: ./gpio_led_user foobar
+   - Resultado: Mensaje de uso, sin fallo del programa
+
+5. Verificación de logs:
+   - Comando: dmesg | tail
+   - Resultado: Mensajes de operación del módulo correctamente impresos
