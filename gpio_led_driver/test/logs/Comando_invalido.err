@@ -1,4 +1,0 @@
-Uso: ../user_app/build/gpio_led_user <comando>
-  on     – Enciende el LED
-  off    – Apaga el LED
-  state  – Consulta el estado del LED

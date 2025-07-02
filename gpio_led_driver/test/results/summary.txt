@@ -1,8 +1,0 @@
-== Iniciando pruebas ==
-[✔] Encender_LED
-[✔] Consultar_LED_on
-[✔] Apagar_LED
-[✔] Consultar_LED_off
-[✘] Comando_invalido
-Pruebas exitosas: 4
-Pruebas fallidas : 1
