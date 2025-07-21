@@ -1,27 +1,27 @@
+# Makefile actualizado
 CC = gcc
-CFLAGS = -Wall -Wextra -Iinclude -pthread
-BIN_DIR = bin
+CFLAGS = -Wall -O2 -pthread
+LDFLAGS = -ljpeg
+TARGET = bin/motion_detector
+TEST_TARGET = bin/motion_test
 
-# Archivos del proyecto
-CORE_SRC = core/motion_engine.c
-TEST_SRC = tests/test_motion.c
-TEST_BIN = $(BIN_DIR)/test_motion
+SRC_CORE = core/motion_engine.c core/capture.c core/gpio.c core/utils.c
+SRC_APP = app/app.c app/main.c
+SRC_TEST = tests/test_motion.c
 
-.PHONY: all clean test
+INCLUDES = -Icore
 
-all:
-	@echo "Usa 'make test' para ejecutar pruebas."
+.PHONY: all clean
 
-# Compilar y ejecutar pruebas unitarias
-test: $(TEST_BIN)
-	@echo "🧪 Ejecutando pruebas de motion_engine..."
-	@./$(TEST_BIN)
+all: $(TARGET) $(TEST_TARGET)
 
-# Compilar binario de pruebas
-$(TEST_BIN): $(TEST_SRC) $(CORE_SRC)
-	@mkdir -p $(BIN_DIR)
-	$(CC) $(CFLAGS) -o $@ $^
+$(TARGET): $(SRC_CORE) $(SRC_APP)
+	@mkdir -p bin
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ $^ $(LDFLAGS)
 
-# Limpiar binarios
+$(TEST_TARGET): $(SRC_TEST) core/motion_engine.c core/utils.c core/capture.c
+	@mkdir -p bin
+	$(CC) $(CFLAGS) $(INCLUDES) -o $@ $^ $(LDFLAGS)
+
 clean:
-	@rm -rf $(BIN_DIR)
+	rm -f bin/*

@@ -1,6 +1,10 @@
 #ifndef GPIO_H
 #define GPIO_H
 
+// Pines según LicheeRV Dock (Allwinner D1)
+#define LED_CAPTURA      112  // PD16 (pin 112)
+#define LED_MOVIMIENTO   118  // PD20 (pin 118)
+
 /**
  * @brief Inicializa un pin GPIO para salida.
  * @param pin Número del pin (por ejemplo, 112).
